@@ -1,6 +1,6 @@
 Add-Type -AssemblyName PresentationCore, PresentationFramework
 
-$WantsBenchmark = [Windows.MessageBox]::Show("Do you want to start the benchmark? The higher the score, the better.", "Are you sure?", 4, 32) -eq 6
+$WantsBenchmark = [Windows.MessageBox]::Show("Do you want to start the benchmark? The higher the score, the better.", "Do you want to start the benchmark?", 4, 32) -eq 6
 
 if ($WantsBenchmark) {
     $Score = 0
